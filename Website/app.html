@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-169234777-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag() { dataLayer.push(arguments); }
+        gtag('js', new Date());
+
+        gtag('config', 'UA-169234777-1');
+    </script>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="fontawesome-free-5.13.0-web/fontawesome-free-5.13.0-web/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Lato&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/png" href="image/logos/white_logo_square@2x.png" />
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>FretBoardGtr</title>
+</head>
+
+<body>
+
+    <div class="container-fluid">
+        <nav class="d-flex" id='navigation'>
+            <div class="d-flex align-items-center">
+                <a href="index.html"><img src="image/logos/white_logo@2x.png" alt="logo" id='mainlogo'></a>
+                <a href="index.html"><span id='namelogo'>FretBoardGtr</span></a>
+                <a href="index.html"><span id='namelogo-sm'>FbGtr</span></a>
+            </div>
+            <div class="d-flex align-items-center ml-auto" id="leftnav">
+                <div> <a href="index.html#about">About</a></div>
+                <div><a href="index.html#about">Buy me a coffee</a></div>
+            </div>
+        </nav>
+
+
+
+
+        <div class="row">
+            <div class="col-lg-4 d-flex justify-content-center ">
+                <div class="container-side" id='container-left'>
+                    <div class="d-flex align-items-center justify-content-center" id="scalechordchoice">
+                        <div id='scalechoiceleft'>Scale</div>
+                        <div class="d-flex align-items-center" id='button'>
+                            <div id='circlebutton'></div>
+                        </div>
+                        <div id="chordchoiceleft">Chord</div>
+                    </div>
+                    <div class="d-flex" id="containerallnotes">
+                        <div class="container-points mr-auto " id="container-points-left">
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="A"></div> A
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="A#"></div> A#/Bb
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="B"></div> B
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="C"></div> C
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="C#"></div> C#/Db
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="D"></div> D
+                            </div>
+                        </div>
+                        <div class="container-points">
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="D#"></div> D#/Eb
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="E"></div> E
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="F"></div> F
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="F#"></div> F#/Gb
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="G"></div> G
+                            </div>
+                            <div class="d-flex align-items-center">
+                                <div class="roundchoice" id="G#"></div> G#/Ab
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" id="selectnotecontainer">
+                        <div id="rootselect">
+                            Root :
+                            <select name="root" id="rootselector">
+                                <option value="A">A</option>
+                                <option value="A#">A#</option>
+                                <option value="B">B</option>
+                                <option value="C">C</option>
+                                <option value="C#">C#</option>
+                                <option value="D">D</option>
+                                <option value="D#">D#</option>
+                                <option value="E">E</option>
+                                <option value="F">F</option>
+                                <option value="F#">F#</option>
+                                <option value="G">G</option>
+                                <option value="G#">G#</option>
+                            </select>
+                        </div>
+
+                        <div id="modeselect">
+                            Mode :
+                            <select name="mode" id="modeselector">
+                                <option value="custom">Custom</option>
+                                <option value="Ionian (Major)">Ionian (Major)</option>
+                                <option value="Dorian">Dorian</option>
+                                <option value="Phrygian">Phrygian</option>
+                                <option value="Lydian">Lydian</option>
+                                <option value="Mixolydian">Mixolydian</option>
+                                <option value="Aeolian (Minor)">Aeolian (Minor)</option>
+                                <option value="Locrian">Locrian</option>
+                                <option value="Melodic Minor">Melodic Minor</option>
+                                <option value="Dorian ♭9">Dorian ♭9</option>
+                                <option value="Augmented Lydian">Augmented Lydian</option>
+                                <option value="Lydian ♭7">Lydian ♭7</option>
+                                <option value="Mixolydian ♭13">Mixolydian ♭13</option>
+                                <option value="Locrian ♮9">Locrian ♮9</option>
+                                <option value="Altered">Altered</option>
+                                <option value="Harmonic Minor">Harmonic Minor</option>
+                                <option value="Locrian ♮13">Locrian ♮13</option>
+                                <option value="Ionian ♯5">Ionian ♯5</option>
+                                <option value="Dorian ♯11">Dorian ♯11</option>
+                                <option value="Mixolydian (♭9,♭13)">Mixolydian (♭9,♭13)</option>
+                                <option value="Lydian ♯9">Lydian ♯9</option>
+                                <option value="Superlocrian ♭♭7">Superlocrian ♭♭7</option>
+                                <option value="Whole Tone">Whole Tone</option>
+                                <option value="Major Pentatonic">Major Pentatonic</option>
+                                <option value="Minor Pentatonic">Minor Pentatonic</option>
+                                <option value="Major Blues">Major Blues</option>
+                                <option value="Minor Blues">Minor Blues</option>
+                                <option value="Half Tone Whole Tone">Half Tone Whole Tone</option>
+                                <option value="Whole Tone Half Tone">Whole Tone Half Tone</option>
+                                <option value="Dominant Bebop">Dominant Bebop</option>
+                                <option value="Major Bebopr">Major Bebop</option>
+                            </select>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex flex-column align-items-center justify-content-between">
+                <div class="d-flex  container-middle flex-column">
+
+                    <div class="justify-content-center">
+                        <div class="d-flex justify-content-center align-items-center" id='plusmoinscontainer'>
+                            <div class="d-flex align-items-center justify-content-center" id="removeTuning"
+                                onclick="removeTuning(this)">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="image/icons8-moins-96.png" alt="Plus icon" id="moinsicon">
+                                </div>
+                            </div>
+                            <div class="d-flex align-items-center justify-content-center" id="addTuning"
+                                onclick="addTuning(this)">
+                                <div class="d-flex align-items-center justify-content-center">
+                                    <img src="image/icons8-plus-96.png" alt="Plus icon" id="plusicon">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex align-items-center justify-content-center" id="tuningContainer">
+                        <div class="d-flex">
+                            <div
+                                class="roundtuning d-flex flex-column align-items-center justify-content-center position-relative">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string1">E</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roundtuning d-flex align-items-center justify-content-center">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string2">A</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roundtuning d-flex align-items-center justify-content-center">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string3">D</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roundtuning d-flex align-items-center justify-content-center">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string4">G</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roundtuning d-flex align-items-center justify-content-center">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string5">B</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                        <div class="d-flex">
+                            <div class="roundtuning d-flex align-items-center justify-content-center">
+                                <img class='trianglehaut' src="image/icons8-tri-croissant-100.png" alt="triangle haut">
+                                <div id="string6">E</div>
+                                <img class='trianglebas' src="image/icons8-tri-dcroissant-100.png" alt="triangle bas">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="d-flex align-items-center justify-content-center" id="tuningandselector">
+                        <div class="mr-auto"> Choose tuning :</div>
+                        <select name="tuning" id="tuningselector"></select>
+                    </div>
+                </div>
+
+                <div class="d-flex justify-content-center container-middle" id='intervalsnotescontainer'>
+                    <div class="d-flex justify-content-center intervalsnotes">
+                        <div class="roundtheme" id="intervals"></div> Intervals
+                    </div>
+                    <div class="d-flex justify-content-center intervalsnotes">
+                        <div class="roundtheme" id="notes"></div> Notes
+                    </div>
+                </div>
+
+                <div class="d-none d-md-flex justify-content-center container-middle" id="generatebutton">
+
+                    <div>Generate</div>
+
+                </div>
+            </div>
+            <div class="col-lg-4 d-flex justify-content-center ">
+                <div class="container-side">
+                    <div id='colorpanel' class='position-relative'>
+                        <div class="d-flex" id='container-allcolors'>
+                            <div class="container-points mr-auto " id="container-points-left">
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalroot" name="interval1"
+                                        value='#e70000'>
+                                    Root
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalminorsecond"
+                                        name="intervalb2" value="#f9e400">
+                                    Minor Second
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalmajorsecond"
+                                        name="interval2" value="#f9a500">
+                                    Major Second
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalminorthird"
+                                        name="intervalb3" value="#005e00">
+                                    Minor Third
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalmajorthird"
+                                        name="interval3" value="#006c00">
+                                    Major Third
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalperfectfourth"
+                                        name="interval4" value="#009a00">
+                                    Perfect Fourth
+                                </div>
+                            </div>
+                            <div class="container-points">
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervaldiminishedfifth"
+                                        name="intervalb5" value="#000f41"> Diminished Fifth
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalperfectfifth"
+                                        name="interval5" value="#004997">
+                                    Perfect Fifth
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalminorsixth"
+                                        name="intervalb6" value="#a86b62">
+                                    Minor Sixth
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalmajorsixth"
+                                        name="interval6" value="#de516c">
+                                    Major Sixth
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalminorseventh"
+                                        name="intervalb7" value="#782586">
+                                    Minor Seventh
+                                </div>
+                                <div class="d-flex">
+                                    <input type="color" class='colorpickercircle' id="intervalmajorseventh"
+                                        name="interval7" value="#781962">
+                                    Major Seventh
+                                </div>
+                            </div>
+                        </div>
+                        <div id='horizontalLine'>
+                        </div>
+                        <div class='d-flex' id='uniquecolorandtext'>
+                            <div class="container-points mr-auto " id="container-points-left">
+
+                                <div class='d-flex align-items-center'>
+                                    <input type="color" class='colorpickercircle' id="uniquecolor" name="uniquecolor"
+                                        value="#fefefe">
+                                    Unique color
+                                </div>
+
+                            </div>
+
+                            <div class="container-points">
+                                <div class='d-flex align-items-center'>
+                                    <input type="color" class='colorpickercircle' id="textcolor" name="textcolor"
+                                        value="#ffffff">
+                                    Text Color
+                                </div>
+                            </div>
+                        </div>
+                        <div class='d-flex justify-content-center align-items-center'>
+                            <div id="restoredefault">
+                                Restore Default
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <div class="d-flex d-md-none justify-content-center container-middle" id="generatebuttonxs">
+
+            <div>Generate</div>
+
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center">
+            <div id="imgsvg"></div>
+        </div>
+
+        <div class="d-flex align-items-center justify-content-center" id='downloadcontainer'>
+            <a href="" download="" id="downloadlink">
+            </a>
+        </div>
+    </div>
+</body>
+
+</html>

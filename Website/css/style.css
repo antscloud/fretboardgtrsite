@@ -1,0 +1,480 @@
+body {
+    background-color: #172638;
+    color: white;
+    font-size: 14px;
+}
+
+.container-side {
+    width: 100%;
+    border-radius: 11px;
+    margin: 0px 0px 0 0;
+    background-color: #21354D;
+}
+
+.container-middle {
+    width: 100%;
+    height: auto;
+    margin: 0px 0px 0 0;
+    background-color: #21354D;
+    border-radius: 11px;
+}
+
+.roundchoice {
+    width: 17px;
+    height: 17px;
+    border-radius: 20px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 7px 10px;
+    cursor: pointer;
+}
+
+.roundchoice:hover {
+    background-color: lightgrey;
+}
+
+.roundtuning {
+    position: relative;
+    width: 30px;
+    height: 30px;
+    border-radius: 30px;
+    background-color: white;
+    border: 2px solid white;
+    margin: 5px 10px;
+    color: black;
+    font-weight: 600;
+}
+
+#addTuning {
+    font-size: 20px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#removeTuning {
+    font-size: 20px;
+    background-color: white;
+    width: 25px;
+    height: 25px;
+    color: black;
+    font-weight: 600;
+    border-radius: 30px;
+    margin: 10px;
+}
+
+#tuningContainer {
+    margin: 15px 0 25px 0;
+}
+
+#plusicon {
+    align-items: center;
+    width: 80%;
+    cursor: pointer;
+}
+
+#plusicon:hover {
+    width: 100%;
+}
+
+#moinsicon {
+    width: 80%;
+    cursor: pointer;
+}
+
+#moinsicon:hover {
+    width: 100%;
+}
+
+.container-points {
+    width: 50%;
+}
+
+.trianglehaut {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    bottom: 26px;
+    cursor: pointer;
+}
+
+.trianglehaut:hover {
+    height: 24px;
+    width: auto;
+    position: absolute;
+    bottom: 26px;
+}
+
+.trianglebas {
+    height: 20px;
+    width: auto;
+    position: absolute;
+    top: 26px;
+    cursor: pointer;
+}
+
+.trianglebas:hover {
+    height: 24px;
+    width: auto;
+    position: absolute;
+    top: 26px;
+}
+
+.roundtheme {
+    width: 17px;
+    height: 17px;
+    border-radius: 10px;
+    border: 2px solid white;
+    background-color: white;
+    margin: 5px 10px;
+    cursor: pointer;
+}
+
+#imgsvg {
+    background-color: #789CA5;
+    border-radius: 30px;
+}
+
+#tuningandselector {
+    margin: 20px;
+}
+
+#tuningselector {
+    width: 200px;
+    height: 30px;
+    background-color: lightgrey;
+    font-size: 16px;
+}
+
+#generatebutton {
+    background-color: #06BC06;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#container-points-left {
+    margin-left: 60px;
+}
+
+#containerallnotes {
+    margin: 40px 0 20px 0;
+}
+
+#rootselect {
+    margin: 0 20px;
+}
+
+#modeselect {
+    margin: 0 20px;
+}
+
+#selectnotecontainer {
+    margin: 20px 0;
+}
+
+#imgsvg {
+    width: 800px;
+    min-height: 240px;
+    margin: 20px;
+    background-color: ivory;
+}
+
+#imgsvg img {
+    width: 100%;
+}
+
+#downloadbutton {
+    margin: 0px 0 30px 0;
+    padding: 0px 20px;
+    background-color: #06BC06;
+    font-weight: 400;
+    font-size: 16px;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+#downloadlink {
+    text-decoration: none;
+    color: white;
+}
+
+#downloadlink:hover {
+    color: white;
+}
+
+#container-left {
+    position: relative;
+}
+
+#scalechordchoice {
+    position: absolute;
+    right: 0;
+    margin: 10px;
+}
+
+#button {
+    box-sizing: border-box;
+    background-color: white;
+    width: 40px;
+    height: 20px;
+    border-radius: 30px;
+    border: 1.5px solid green;
+    margin: 0 7px;
+    cursor: pointer;
+}
+
+#circlebutton {
+    width: 12px;
+    height: 12px;
+    margin: 0 3px;
+    border-radius: 10px;
+    background-color: green;
+}
+
+#scalechoiceleft {
+    font-size: 14px;
+    font-weight: 400;
+    margin-bottom: 2px;
+}
+
+#chordchoiceleft {
+    font-size: 14px;
+    font-weight: 200;
+    color: rgb(179, 179, 179);
+    margin-bottom: 2px;
+}
+
+#themebuttoncontainer {
+    margin: 20px 0;
+}
+
+.themebutton {
+    font-weight: 500;
+    font-size: 15px;
+    width: 70%;
+    margin: 10px 20px;
+    padding: 3px 0;
+    background-color: #789CA5;
+    border-radius: 20px;
+    cursor: pointer;
+}
+
+.colorpickercircle {
+    border-radius: 100%;
+    height: 17px;
+    width: 17px;
+    border: none;
+    outline: none;
+    padding: 0;
+    border: 1px solid white;
+    margin: 7px 10px;
+    cursor: pointer;
+}
+
+.colorpickercircle::-webkit-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 100%;
+}
+
+.colorpickercircle::-webkit-color-swatch {
+    border: none;
+    border-radius: 100%;
+}
+
+.colorpickercircle::-moz-color-swatch-wrapper {
+    padding: 0;
+    border-radius: 100%;
+}
+
+.colorpickercircle::-moz-color-swatch {
+    border: none;
+    border-radius: 100%;
+}
+
+#restoredefault {
+    background-color: #789CA5;
+    font-weight: 200;
+    border-radius: 20px;
+    padding: 0px 20px;
+    margin: 10px 0;
+    cursor: pointer;
+}
+
+#container-allcolors {
+    margin-top: 10px;
+}
+
+#closecolor {
+    width: 20px;
+    position: absolute;
+    right: 0;
+    margin: 5px 10px 10px 10px;
+    font-size: 20px;
+}
+
+#closecolor:hover {
+    width: 25px;
+}
+
+#closecolor img {
+    width: 100%;
+}
+
+#colorpanel {
+    display: block;
+}
+
+.intervalsnotes {
+    margin: 0 40px;
+}
+
+#horizontalLine {
+    margin: 7px 30px 7px 30px;
+    border-top: 1px grey solid;
+}
+
+#intervalsnotescontainer {
+    padding: 5px 0;
+}
+
+#navigation {
+    padding: 10px 15px;
+    margin: 0 -15px;
+}
+
+#navigation a {
+    text-decoration: none;
+    color: inherit;
+}
+
+#mainlogo {
+    width: 50px;
+    height: auto;
+    margin-right: 10px;
+}
+
+#namelogo {
+    font-weight: 500;
+    font-size: 16px;
+}
+
+#leftnav div {
+    margin: 0 10px;
+    color: rgb(179, 179, 179);
+}
+
+#namelogo-sm {
+    display: none;
+}
+
+@media (max-width:576px) {
+    #container-points-left {
+        margin-left: 20px;
+    }
+    #imgsvg {
+        width: 800px;
+        min-height: 125px;
+        margin: 20px;
+        background-color: ivory;
+    }
+    .roundtuning {
+        position: relative;
+        width: 25px;
+        height: 25px;
+        border-radius: 20px;
+        background-color: white;
+        border: 2px solid white;
+        margin: 5px 6.5px;
+        color: black;
+        font-weight: 600;
+    }
+    .trianglehaut {
+        height: 20px;
+        width: auto;
+        position: absolute;
+        bottom: 20px;
+        cursor: pointer;
+    }
+    .trianglehaut:hover {
+        height: 20px;
+        width: auto;
+        position: absolute;
+        bottom: 20px;
+    }
+    .trianglebas {
+        height: 20px;
+        width: auto;
+        position: absolute;
+        top: 20px;
+        cursor: pointer;
+    }
+    .trianglebas:hover {
+        height: 20px;
+        width: auto;
+        position: absolute;
+        top: 20px;
+    }
+    #generatebuttonxs {
+        background-color: #06BC06;
+        font-weight: 400;
+        font-size: 16px;
+        border-radius: 20px;
+        cursor: pointer;
+    }
+    .container-side {
+        margin: 10px 0;
+    }
+    .container-middle {
+        margin: 10px 0;
+    }
+    #namelogo {
+        display: none;
+    }
+    #namelogo-sm {
+        display: block;
+        font-weight: 500;
+        font-size: 16px;
+    }
+}
+
+/* 
+.roundchoiceanimation {
+    background-color: white;
+    animation-name: stretchup;
+    animation-duration: 0.3s;
+    animation-timing-function: ease-out;
+    animation-delay: 0;
+    animation-direction: alternate;
+     animation-iteration-count: infinite; 
+    animation-fill-mode: none;
+     animation-play-state: running; 
+    animation-fill-mode: forwards;  
+}
+
+@keyframes stretchup {
+    0% {
+        transform: scale(.3);
+        background-color: white;
+    }
+    100% {
+        transform: scale(1);
+        background-color: green;
+    }
+}
+
+@keyframes stretchdown {
+    0% {
+        transform: scale(1);
+        background-color: green;
+    }
+    100% {
+        transform: scale(0);
+        background-color: white;
+    }
+} */
